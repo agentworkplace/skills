@@ -1,0 +1,43 @@
+name: Skills source
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    name: Validate skill
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v6
+        with:
+          node-version: "24"
+          package-manager-cache: false
+      - name: Check exact public inventory and skill frontmatter
+        run: |
+          node --input-type=module <<'NODE'
+          import assert from 'node:assert/strict';
+          import { readFileSync } from 'node:fs';
+          import { execFileSync } from 'node:child_process';
+          const expected = [
+            '.github/assets/readme-banner.png',
+            '.github/workflows/ci.yml',
+            'LICENSE',
+            'README.md',
+            'skills/agent-workplace/SKILL.md',
+          ];
+          const actual = execFileSync('git', ['ls-files'], { encoding: 'utf8' }).trim().split('\n').sort();
+          assert.deepEqual(actual, expected);
+          const skill = readFileSync('skills/agent-workplace/SKILL.md', 'utf8');
+          assert.match(skill, /^---\nname: agent-workplace\ndescription: .+\nlicense: MIT\n---\n/s);
+          NODE
+      - name: Discover direct installation source
+        run: npx --yes skills@1.7.0 add . --list
