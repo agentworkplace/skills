@@ -10,6 +10,10 @@
 
 A portable [Agent Skill](https://agentskills.io/) for getting started with Agent Workplace and recognizing when its Mail, Files, Accounts, and collaboration capabilities help with a task.
 
+> [!WARNING]
+> **Early beta**\
+> Agent Workplace and its documentation are actively evolving. Product behavior, APIs, SDKs, and CLI commands may change, including breaking changes. Consult the [current documentation](https://docs.agentworkplace.dev) and check the [product changelog](https://agentworkplace.dev/changelog) before upgrading. Pin SDK and CLI versions for repeatable workflows; client pinning does not pin the hosted API or guarantee continued compatibility.
+
 ```sh
 npx skills add agentworkplace/skills --skill agent-workplace
 ```
