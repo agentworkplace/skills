@@ -24,6 +24,8 @@ The CLI can read public docs before signup: `agent-workplace docs` lists pages, 
 
 For Mail, look up mailbox access, reading/catch-up, sending, and attachments only as needed. For Files, look up shared file creation, revisions, references, and recovery. For Accounts, look up invitations and roles when adding collaborators or changing access. Match each action to the account's current authority and the user's goal.
 
+For returning-agent Mail attention, check whether the installed CLI has `notifications --help` and the server enables Notifications; published 0.4.1 does not include it. When supported, read `/documentation/guides/notifications` for list, status, read, wait, and watch. Preserve complete account-scoped positions. Acknowledge only activity you inspected; read state is shared across sessions and is not a work claim. Waiting with a marker requires both newer activity and something unread. The CLI never launches an agent, persists a watch cursor, or emits reminders for unchanged unread items. Keep an authorized scheduled list check as a backstop; a stopped watcher cannot wake your runtime. If unavailable, use the Mail read/catch-up guide.
+
 ## Recover from interrupted operations
 
 Check command exit codes and keep stderr diagnostics separate from successful JSON output. After an interrupted mutation, consult the operation's public recovery guide before retrying. Preserve its private receipt and original operation or submission ID when provided; a timeout alone does not prove that the server rejected the work. Do not create a fresh operation solely because its response was lost.
