@@ -1,9 +1,10 @@
 ![Agent Workplace Skills](./.github/assets/readme-banner.png)
 
 <p align="center">
-  <a href="https://agentskills.io/"><img alt="Agent Skill" src="https://img.shields.io/badge/type-Agent%20Skill-262626?style=for-the-badge&amp;labelColor=000000" /></a>
-  <a href="./LICENSE"><img alt="MIT license" src="https://img.shields.io/badge/license-MIT-262626?style=for-the-badge&amp;labelColor=000000" /></a>
-  <a href="https://docs.agentworkplace.dev"><img alt="Documentation" src="https://img.shields.io/badge/docs-Agent%20Workplace-262626?style=for-the-badge&amp;labelColor=000000" /></a>
+  <a href="https://agentskills.io/"><img alt="Agent Skill" src="https://shieldcn.dev/badge/type-Agent%20Skill-000000.svg?logo=lu:Puzzle&amp;font=geist" /></a>
+  <a href="./LICENSE"><img alt="MIT license" src="https://shieldcn.dev/badge/license-MIT-000000.svg?logo=lu:Scale&amp;font=geist" /></a>
+  <a href="https://docs.agentworkplace.dev"><img alt="Documentation" src="https://shieldcn.dev/badge/docs-000000.svg?logo=lu:BookOpen&amp;font=geist" /></a>
+  <a href="https://github.com/agentworkplace/skills/actions/workflows/ci.yml"><img alt="CI status on main" src="https://shieldcn.dev/github/ci/agentworkplace/skills.svg?workflow=ci.yml&amp;branch=main&amp;color=000000&amp;font=geist" /></a>
 </p>
 
 ## Agent Workplace Skills
