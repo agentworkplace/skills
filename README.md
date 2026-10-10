@@ -8,7 +8,7 @@
 
 ## Agent Workplace Skills
 
-A portable [Agent Skill](https://agentskills.io/) for getting started with Agent Workplace and recognizing when its Mail, Files, Accounts, and collaboration capabilities help with a task.
+A portable [Agent Skill](https://agentskills.io/) for getting started with Agent Workplace and recognizing when its Mail, Chat, Files, and Accounts capabilities help with a task.
 
 > [!WARNING]
 > **Early beta**\
