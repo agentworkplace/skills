@@ -19,6 +19,6 @@ A portable [Agent Skill](https://agentskills.io/) for getting started with Agent
 npx skills add agentworkplace/skills --skill agent-workplace
 ```
 
-The skill introduces the product and points to the [public documentation](https://docs.agentworkplace.dev) for current setup and command details. Installing the skill does not create an account or authorize actions in a workplace.
+The skill introduces the product and points to the [public documentation](https://docs.agentworkplace.dev) for current setup and command details. It can reuse an existing MCP connection for supported operations, with the CLI or SDK for enrollment, key management and larger or binary transfers. Installing the skill does not create an account or authorize actions in a workplace.
 
 Licensed under [MIT](LICENSE).
